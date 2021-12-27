@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<header></header><script>$("header").load('menu.html')</script>
+
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal">Заявки на сегодня</h1>
+      </div>
+    <div id="steak" class="row row-cols-1 row-cols-md-3 mb-3 text-center" style="padding: 30px">
+        
+        
+    </div>
+<!--Форма заявки-->
+    <div class="modal" tabindex="-1" role="dialog" id="modalSheet">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Курьеркая доставка #101</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>20 стопов</li>
+                    <li>3 000 ₽ в день</li>
+                    <li>200 кг</li>
+                    <li>MOI</li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <div class="col-sm">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Адрес</th>
+                          <th scope="col">Тип</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Россия, Москва, Борисовский проезд, 10к1</td>
+                          <td>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                              <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                            </svg>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Россия, Москва, улица Маршала Захарова, 27,</td>
+                          <td>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+                              <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+                            </svg>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Россия, Москва, Каширское шоссе, 92к3</td>
+                          <td>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                              <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                            </svg>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-sm">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Add56f71d9e3a0ed9081316d164159e0baef53511caaaafa089dbba003429170b&amp;source=constructor" width="320" height="300" frameborder="0"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary btn-lg w-100">Взять заявку</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#area").click(function () {  
+                document.location.href='cabinet.html'
+            });
+
+            $.getJSON('dbase.json', function (data) {
+
+                $.each(data.orders.heels,function(i,item){ 
+
+                    day = item.stop_count*item.price
+                    $("#steak").append(
+                        '<div class="col">'+
+                            '<div class="card mb-4 rounded-3 shadow-sm">'+
+                                '<div class="card-header py-3">'+
+                                    '<h4 class="my-0 fw-normal">Курьеркая доставка #'+item.id+'</h4>'+
+                                '</div>'+
+                            '<div class="card-body">'+
+                                '<h1 class="card-title pricing-card-title">'+item.price+' ₽<small class="text-muted fw-light">/стоп</small></h1>'+
+                                    '<ul class="list-unstyled mt-3 mb-4">'+
+                                        '<li>'+item.stop_count+' стопов</li>'+
+                                        '<li>'+day+' ₽ в день</li>'+
+                                        '<li>'+item.weight+' кг</li>'+
+                                        '<li>'+item.from+'</li>'+
+                                    '</ul>'+
+                                '<button type="button" id="get-'+item.id+'" class="w-100 btn btn-lg btn-outline-primary">Взять заявку</button>'+
+                            '</div>'+
+                        '</div>'
+                        )
+                })
+            $(".btn").click(function () {
+                console.log('dsdsdd')
+                $("#modalSheet").modal("show");
+            });
+
+            })
+            
+        })
+    </script>
+</body>
+</html>
